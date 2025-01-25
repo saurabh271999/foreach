@@ -37,8 +37,8 @@ const users = [
     },
     {
       id: 3,
-      name: "Alice Johnson",
-      age: 24,
+      name: "tony stark",
+      age: 55,
       email: "alice.johnson@example.com",
       isActive: true,
       hobbies: ["photography", "traveling"]
@@ -50,10 +50,30 @@ const users = [
       email: "bob.brown@example.com",
       isActive: false,
       hobbies: ["golf", "fishing"]
-    }
+    },
+    {
+        id: 3,
+        name: "Alice Johnson",
+        age: 24,
+        email: "alice.johnson@example.com",
+        isActive: true,
+        hobbies: ["photography", "traveling"]
+      },
+      {
+        id: 3,
+        name: "rockey",
+        age: 45,
+        email: "alice.johnson@example.com",
+        isActive: true,
+        hobbies: ["photography", "traveling"]
+      },
   ];
 
-  const findData = users.filter((item) => item.age === 45)
+  let findData = users.filter((item) => item.age === 45)
+  console.log(findData)
+
+  findData = users.filter((item) => {
+    return item.id === 3 && item.age === 24})
   console.log(findData)
 
 
